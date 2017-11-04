@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_title"
+    android:layout_width="@dimen/header_width"
+    android:layout_height="match_parent"
+    android:textSize="@dimen/header_text_size"
+    android:gravity="center"
+    tools:text="title">
+
+</TextView>
