@@ -11,6 +11,7 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import tek.gezacsorba.supertv.BaseActivity;
+import tek.gezacsorba.supertv.BuildConfig;
 import tek.gezacsorba.supertv.R;
 import tek.gezacsorba.supertv.di.DaggerMainComponent;
 import tek.gezacsorba.supertv.di.MainModule;
@@ -62,7 +63,11 @@ public class MainActivity extends BaseActivity implements MainContract.View {
 
     @Override
     public void showError(Throwable throwable) {
-        Toast.makeText(this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
+        if (BuildConfig.DEBUG) {
+            Toast.makeText(this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, R.string.error_message, Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override

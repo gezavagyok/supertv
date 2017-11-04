@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SuperTV</string>
     <string name="no_programme">Sorry, no programme for today :(</string>
+    <string name="error_message">Oops, the server is on fire! :(</string>
 </resources>
