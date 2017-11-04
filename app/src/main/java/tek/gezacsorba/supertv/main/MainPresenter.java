@@ -13,9 +13,9 @@ import tek.gezacsorba.supertv.use_case.LoadChannelsUseCase;
 
 public class MainPresenter implements MainContract.Presenter {
 
-    MainContract.View view;
-    LoadChannelsUseCase useCase;
-    CompositeDisposable compositeDisposable;
+    private final MainContract.View view;
+    private final LoadChannelsUseCase useCase;
+    private final CompositeDisposable compositeDisposable;
 
     @Inject
     public MainPresenter(MainContract.View view, LoadChannelsUseCase useCase) {

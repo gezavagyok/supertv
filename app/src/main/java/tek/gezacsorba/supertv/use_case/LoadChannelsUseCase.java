@@ -12,7 +12,7 @@ import tek.gezacsorba.supertv.network.Channel;
 
 public class LoadChannelsUseCase {
 
-    final Api api;
+    private final Api api;
 
     public LoadChannelsUseCase(Api api) {
         this.api = api;
