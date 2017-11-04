@@ -72,8 +72,6 @@ public class MainActivity extends BaseActivity implements MainContract.View {
 
     @Override
     public void displayChannels(List<Channel> channels) {
-        Toast.makeText(this, "size is: " + channels.size(), Toast.LENGTH_SHORT).show();
-
         if (checkEmpty(channels)) return;
 
         for (Channel channel : channels) {
